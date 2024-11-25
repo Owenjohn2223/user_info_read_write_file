@@ -1,17 +1,17 @@
 
 while True:
-    name = input("Input your Fullname: ")
+    name = input("Input your Fullname: ").upper()
     age = int(input("Input your Age: "))
 
     while True:    
-        gender = input("Input your Gender (male/female): ")
+        gender = input("Input your Gender (male/female): ").capitalize()
 
-        if gender == 'male':
+        if gender == 'Male':
             break
-        elif gender == 'female':
+        elif gender == 'Female':
             break
         else:
-            print("Choose netween 'male' or 'female' only.")
+            print("Choose netween 'Male' or 'Female' only.")
             continue
         
     while True:
@@ -25,10 +25,24 @@ while True:
     
     city = input("Input your city: ")
 
-    with open('user_informations.txt', 'a') as file_infos:
-        file_infos.write(f"{name}\nAge: {age}\nGender: {gender}\nContact Number: {contact_number}\nCity: {city}\n")
+    with open('file_informations.txt', 'a') as file_infos:
+        file_infos.write(f"\n{name}\nAge: {age}\nGender: {gender}\nContact Number: {contact_number}\nCity: {city}\n")
 
-    print("------------------------")
+    print("------------------------\n")
+    print("*Information added to text file*")
     print(f"\nName: {name}\nAge: {age}\nGender: {gender}\nContact Number: {contact_number}\nCity: {city}\n")
     print("------------------------")
+    
+    while True:
+        add_more = input("Add more? (y/n): ")
 
+        if add_more == 'y':
+            break
+        elif add_more == 'n':
+            print("\nGood Bye!")
+            break
+        else:
+            print("***Invalid Input***")
+
+    if add_more == 'n':
+        break
