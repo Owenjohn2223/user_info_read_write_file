@@ -11,7 +11,7 @@ while True:
         elif gender == 'Female':
             break
         else:
-            print("Choose netween 'Male' or 'Female' only.")
+            print("Choose between 'Male' or 'Female' only.")
             continue
         
     while True:
