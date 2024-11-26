@@ -1,0 +1,18 @@
+
+DANILO
+Age: 36
+Gender: Male
+Contact Number: 12345678910
+City: Manila
+
+JOHN
+Age: 21
+Gender: Male
+Contact Number: 09999999999
+City: Chicago
+
+SAMANTHA
+Age: 29
+Gender: Female
+Contact Number: 11111111111
+City: Las Vegas
