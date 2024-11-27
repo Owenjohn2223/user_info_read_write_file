@@ -8,16 +8,20 @@ found = False
 store_info = []
 
 for line in file_lines:
-    if line.strip() == "":
+    line = line.strip() 
+    if line == "":
         if any(search_info in item.upper() for item in store_info):
             found = True
-            print("\n".join(store_info))
-            store_info = []
+            print("\n".join(store_info))  
+        store_info = []
     else:
-        store_info.append(line.strip())
+        store_info.append(line)  
+        
+if store_info and any(search_info in item.upper() for item in store_info):
+    found = True
+    print("\n".join(store_info))
 
 if not found:
-     print(f"No result found for '{search_info}'")
-        
+    print(f"No result found for '{search_info}'")        
 
 
