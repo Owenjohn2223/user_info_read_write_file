@@ -16,3 +16,15 @@ Age: 29
 Gender: Female
 Contact Number: 11111111111
 City: Las Vegas
+
+BINI MALOI
+Age: 21
+Gender: Female
+Contact Number: 02461375987
+City: Cebu
+
+BINI MIKHA
+Age: 21
+Gender: Female
+Contact Number: 07598426135
+City: manila
